@@ -1,11 +1,9 @@
-const express   = require('express')
-const serv      = express.Router()
-const cors      = require('cors')
-const formidable= require('formidable')
+const express   = require('express'),
+      serv      = express.Router(),
+      cors      = require('cors'),
+      formidable= require('formidable');
 
 serv.use(cors())
-
-// !! remember this is a server file on port 5000 so don't use /dba
 
 serv.all('/upload', (req, res) => {
 
