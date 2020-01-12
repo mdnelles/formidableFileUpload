@@ -1,9 +1,9 @@
-const express       = require('express')
-const cors          = require('cors')
-const bodyParser    = require('body-parser')
-const app           = express()
-const port          = process.env.PORT || 5000
-const pj            = require('./components/config.json')
+const express       = require('express'),
+      cors          = require('cors'),
+      bodyParser    = require('body-parser'),
+      app           = express(),
+      port          = process.env.PORT || 5000,
+      pj            = require('./components/config.json')
 
 app.use(bodyParser.json())
 app.use(cors())
